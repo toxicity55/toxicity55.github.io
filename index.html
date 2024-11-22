@@ -1,228 +1,175 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
- <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link rel="shortcut icon" type="png" href="https://pics.esputnik.com/repository/home/10998/images/msg/2981225/1659614740696.png">
-<title>Сторіночка Натахи</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    height: 100%;
+}
 
+.message-container1 {
+    background-color: white;
+    border: 3px solid #A020F0;
+    border-radius: 15px;
+    text-align: center;
+    min-width: 300px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+}
 
+.message-container2 {
+    background-color: white;
+    border: 3px solid #A020F0;
+    border-radius: 15px;
+    text-align: center;
+    min-width: 300px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.message-container1 {
+    display: block; /* First screen is visible by default */
+}
+.inner-container {
+    padding: 20px;
+}
+
+.magic-ball {
+    display: block;
+    margin: 0 auto 20px;
+    width: 100%;
+    max-width: 250px;
+    border-radius: 12px 12px 0 0;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #82858A;
+    text-align: center;
+}
+
+.message-title {
+    color: #000000;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.message-text {
+    font-size: 16px;
+    color: #82858A;
+    margin: 10px 0;
+}
+
+.action-button {
+    background-color: #A020F0;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+  </style>
 </head>
 <body>
-<style>  body{
-font-family:  helvetica, sans-serif;
-background:#ffffff;
-height: 100%;
-wight: 100%;
-margin: 0px;
-}
-
- .blog{
-    flex-shrink: 4;
-  }
-
-.fixedheader{
-position: fixed;
-top: 0;
-left: 0;
-padding: 15px 25px;
-height: 150px;
-width: 100%;
-z-index: 1;
-background: #FFF9CA;
-border-bottom: 3px solid #B2A4FF;
-}
-
-.header{
-display: flex;
-position:relative;
-justify-content:flex-start;
-width: 70%;
-
-}
-
-  .kartochki{
-    height: 150px;
-  }
-
-li{
-list-style-type: none;
-padding: 50px 40px; 
-margin: 10px 20px;
-font-family:  helvetica, sans-serif;
-font-size: 25px;
-flex-shrink: 1;
-}
-
-.knopki{
-position: relative;
-display: flex;
-margin: 180px auto 0px;
-padding: 40px 60px 35px;
-justify-content: space-around;
-border-right: solid 3px #B2A4FF;
-border-left: solid 3px #B2A4FF;
-border-bottom: 3px solid #B2A4FF;
-width: 80%;
-}
-
-
-button{
-background: #FFDEB4;
-color:#293462;
-margin: 5px;
-padding: 10px;
-width: 160px;
-border-radius: 8px;
-border-color: #FFB4B4;
-border: 0px;
-}
-
-.container{
-border: 3px solid #B2A4FF;
-border-radius: 8px;
-padding: 20px 15px 15px;
-flex-shrink: 1;
-}
-
-  .kartochkitop{
-    display: block;
-    margin: 5px;
-  }
-  .menushechka {
-    color: #293462;
-    text-decoration:none;
-  }
-  
-  .form1 {
-  widh: 100%;
-  display: inline-block;
-  height: 400px;
-}
-
-.footer{
-}
-</style>
-
-<div class="fixedheader">
-
-<div class="header"> <a href="https://okwine.ua/product/rom-palcy-mertveca-ded-mens-fingers-kofe-dead-mans-fingers-dmf-coffee-375-005l">
-<img class="logo" src="https://pics.esputnik.com/repository/home/10998/images/msg/2981225/1659611688721.png" style="width:150px;>                                
-</a>
-
-
-   <div>
-
-
-    <ul class="menu">
-
-
-    <li >
-
-
-      <a class="menushechka" href="https://okwine.ua/product/rom-dead-mans-fingers-dmf-mango-375-05l">Каталог</a>
-
-
-    </li>
-
-
-    <li >
-
-
-      <a class="menushechka" href="https://okwine.ua/product/rom-dead-mans-fingers-dmf-hazelnut-375-05l">Доставка</a>
-
-
-    </li>
-
-
-    <li>
-
-
-      <a class="menushechka" href="https://okwine.ua/product/rom-palcy-mertveca-ded-mens-fingers-lam-dead-mans-fingers-dmf-lime-375-07l">Контакти</a>
-
-
-    </li>
-
-
-    <li class="blog>
-
-
-      <a class="menushechka" href="https://okwine.ua/product/rom-ded-mans-fingers-kokos-dead-mans-fingers-coconut-40-07l">Блог</a>
-
-
-    </li></div>    </div>        
-
-
- </div>
-
-
-  </div>
-
-
-  <div class="knopki">          
-
-
-   <div class="container">
- <div class="kartochkitop"><img src="https://pics.esputnik.com/repository/home/89481/images/msg/3045080/1670671481601.png" class="kartochki"></div>                        
-
-
-     <button class="knopka1">Меню
-
-
-     </button>
-
-
-   </div>
-
-
-   <div class="container">
-  <div class="kartochkitop"><img src="https://pics.esputnik.com/repository/home/4294/images/msg/2981225/1659620628058.png" class="kartochki"></div>                          
-                         
-
-
-     <button>Ще меню
-
-
-     </button>
-
-
-   </div>
-
-
-   <div class="container" > 
- <div class="kartochkitop"><img src="https://pics.esputnik.com/repository/home/4294/images/msg/2981225/1659620497728.png" class="kartochki" ></div>                           
-<button>І ще одне
-
-     </button>
-</div>
-
-
-   <div class="container">
-<div class="kartochkitop"><img src="https://pics.esputnik.com/repository/home/10998/images/msg/2981225/1659619039889.png" class="kartochki"></div>   
-
-      <button>Останнє
-
-
-      </button>         
-</div>
-  </div>
-
-
- </div>
-<script>
-    !function (t, e, c, n) {
-        var s = e.createElement(c);
-        s.async = 1, s.src = 'https://statics.esputnik.com/scripts/' + n + '.js';
-        var r = e.scripts[0];
-        r.parentNode.insertBefore(s, r);
-        var f = function () {
-            f.c(arguments);
-        };
-        f.q = [];
-        f.c = function () {
-            f.q.push(arguments);
-        };
-        t['eS'] = t['eS'] || f;
-    }(window, document, 'script', 'E134F2A550584F62B167154462AF3BC9');
-</script><script>eS('init');</script> 
+    <!-- Screen 1 -->
+    <div id="screen-1" class="message-container1">
+        <button 
+            data-target-component-id="c740db99-cfbb-4857-b790-cb5631c33255" 
+            data-sys-action-type="CLOSE_WIDGET" 
+            class="close-button">
+            ×
+        </button>
+        <div class="inner-container">
+            <img src="https://img1.picmix.com/output/stamp/normal/6/8/7/2/1162786_05b01.gif" alt="Magic Ball" class="magic-ball">
+            <div class="message-title">Are you ready to see your prediction?</div>
+            <p class="message-text">Tap the button below to unveil what the future has in store for you!</p>
+            <button 
+                class="action-button" 
+                onclick="showPrediction()" 
+                data-target-component-id="1c92f19e-c994-11ed-afa1-0242ac120002" 
+                data-sys-action-type="CLICK">
+                Ready
+            </button>
+        </div>
+    </div>
+
+    <!-- Screen 2 -->
+    <div id="screen-2" class="message-container2 hidden">
+        <button 
+            data-target-component-id="c740db99-cfbb-4857-b790-cb5631c33255" 
+            data-sys-action-type="CLOSE_WIDGET" 
+            class="close-button">
+            ×
+        </button>
+        <div class="inner-container">
+            <div class="message-title">Your Prediction:</div>
+            <p id="prediction-text" class="message-text"></p>
+            <button 
+                class="action-button" 
+                onclick="goBack()" 
+                data-target-component-id="1c92f19e-c994-11ed-afa1-0242ac120002" 
+                data-sys-action-type="CLICK">
+                Try Again
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Predefined predictions
+        const predictions = [
+            "A surprising opportunity awaits you today!",
+            "Your creativity will shine through this week.",
+            "Big changes are on the horizon—be ready!",
+            "A small risk could lead to big rewards.",
+            "Luck is on your side—make the most of it!"
+        ];
+
+        // Show a random prediction
+        function showPrediction() {
+            const randomIndex = Math.floor(Math.random() * predictions.length);
+            document.getElementById('prediction-text').textContent = predictions[randomIndex];
+            document.getElementById('screen-1').classList.add('hidden');
+            document.getElementById('screen-2').classList.remove('hidden');
+        }
+
+        // Return to the first screen
+        function goBack() {
+          
+            document.getElementById('screen-1').classList.remove('hidden');
+            document.getElementById('screen-2').classList.add('hidden');
+        }
+    </script>
 </body>
 </html>
