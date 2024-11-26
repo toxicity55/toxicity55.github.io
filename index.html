@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <link rel="stylesheet" href="styles.css">
   <style>
- body {
+    body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -27,7 +27,7 @@
     display: none;
 }
 
-.message-container:first-of-type {
+.message-container {
     display: block; /* First screen is visible by default */
 }
 
@@ -83,15 +83,12 @@
     font-weight: bold;
 }
 
-.hidden {
-    display: none;
-}
 
-  </style>
+     </style>
 </head>
 <body>
     <!-- Screen 1 -->
-    <div id="screen-1" class="message-container1">
+    <div id="screen-1" class="message-container">
         <button 
             data-target-component-id="c740db99-cfbb-4857-b790-cb5631c33255" 
             data-sys-action-type="CLOSE_WIDGET" 
@@ -106,14 +103,14 @@
                 class="action-button" 
                 onclick="showPrediction()" 
                 data-target-component-id="1c92f19e-c994-11ed-afa1-0242ac120002" 
-                data-sys-action-type="CLICK">
+               >
                 Ready
             </button>
         </div>
     </div>
 
     <!-- Screen 2 -->
-    <div id="screen-2" class="message-container2 hidden">
+    <div id="screen-2" class="message-container hidden">
         <button 
             data-target-component-id="c740db99-cfbb-4857-b790-cb5631c33255" 
             data-sys-action-type="CLOSE_WIDGET" 
@@ -127,7 +124,7 @@
                 class="action-button" 
                 onclick="goBack()" 
                 data-target-component-id="1c92f19e-c994-11ed-afa1-0242ac120002" 
-                data-sys-action-type="CLICK">
+                >
                 Try Again
             </button>
         </div>
@@ -144,19 +141,12 @@
         ];
 
         // Show a random prediction
-        function showPrediction() {
+       
             const randomIndex = Math.floor(Math.random() * predictions.length);
             document.getElementById('prediction-text').textContent = predictions[randomIndex];
-            document.getElementById('screen-1').classList.add('hidden');
-            document.getElementById('screen-2').classList.remove('hidden');
-        }
+           
+        
 
-        // Return to the first screen
-        function goBack() {
-          
-            document.getElementById('screen-1').classList.remove('hidden');
-            document.getElementById('screen-2').classList.add('hidden');
-        }
     </script>
 </body>
 </html>
